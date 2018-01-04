@@ -52,11 +52,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="signup">
 							<h3>Sign Up</h3>
 							<h4>Enter Your Details Here</h4>
+							<form action ="formval.php" method="POST" >
 							<input type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" />
 							<input type="text" value="Second Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Second Name';}" />
-							<input type="text" class="email"value="Enter Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Email';}"  />
-							<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"/>
-							<input type="submit"  value="SignUp"/>
+							<input type="text" class="email" value="Enter Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Email';}"  />
+							<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"/></br>
+							<input type="radio" name="farmerOrInvestor" value="farmer">&nbsp A farmer
+							<input type="radio" name="farmerOrInvestor" value="investor">&nbsp An Investor
+
+			
+							<input name="submit" type="submit"  value="submit"/>
+							</form>
 						</div>
 					</div>	
 				 <script>
